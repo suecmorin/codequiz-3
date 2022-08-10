@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  padding: 20px;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background: linear-gradient(0deg, rgba(19,41,61,1) 0%, rgba(237,245,249,1) 63%);
+}
+
+.win-loss-container {
+  page-break-before: always;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+ button {
+  background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,96,33,0.9542191876750701) 100%);
+  border-radius: 8px;
+  color: #13293d;
+  cursor: pointer;
+  font-size: 2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 1200px;
+  padding: 20px 52px;
+  text-align: center;
+  margin-left: 800px;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+}
+.button1 {
+  background-color: rgb(219, 161, 85);
+  max-width: 200px;
+  text-align: center;
+  border-radius: 4px;
+  color: #13293d;
+}
+
+p  {
+  text-align: center;
+  margin-left: 0;
+}
+.header1 {
+  margin-top: 100px;
+  padding: 40px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+  border-bottom:30px #879274;
+}
+
+.reset-button {
+  font-size: 12px;
+  width: 20ox;
+  
+}
+.go-back-button {
+  font-size: 12px;
+  width: 20ox;
+}
+
+.results {
+  width: 30vw;
+  height: 400px;
+}
+
+
+.large-font {
+  font-size: 3.5em;
+  text-align:center;
+}
+
+
+  /*make app visible on multiple screen sizes*/
+
+@media screen and (max-width: 1183px) {
+  main {
+    flex-direction: column;
+  }
+  section {
+    background-color: white;
+    margin: 20px auto;
+    width: 92vw;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .large-font {
+    font-size: 2em;
+  }
+
+  .timer {
+    height: 200px;
+  }
+}
