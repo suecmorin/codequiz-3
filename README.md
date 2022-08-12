@@ -14,6 +14,7 @@ INSTALLATION Files were uploaded to GitHub.
 
 SUPPORT Please contact Sue Morin, suecmorin@gmail.com.
 
-IMAGE https:image.png
+IMAGE ![image](https://user-images.githubusercontent.com/108021713/184271879-6560032e-e230-46ca-9310-72b4caf9dc89.png)
+
 
 CONTRIBUTING 
