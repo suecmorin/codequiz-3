@@ -14,7 +14,7 @@
   <body>
     <main>
     <section>
-      <div header1>
+      <div header1 id="startpage" style="display: block">
       <div class="large-font">Coding Quiz Challenge</div>
       <p>Try to answer the following code-related<br>
        questions within the time limit.<br>
@@ -24,21 +24,27 @@
       </div>
       </section>
       <section>
-          <div id="quiz" style="display: none"></div>
-          <div id = "question" style="display: none"></div>
-          <div id="choices" style="display: none">
-            <div class="choice" id="A"
-            onclick="checkanswer('A')">A</div>
-            <div class="choice" id="B"
-            onclick="checkAnswer('B')">B</div>
-            <div class="choice" id="C"
-            onclick="checkAnswer('C')">C</div>
-            <div class="choice" id="D"
-            onclick="checkAnswer('D')">D</div>
+          <div id="quiz" style="display: none">
+          <div id ="question" class="question"></div>
+          <div id="choices"></div>
+            <div class="choice" id="A" onclick="checkAnswer('A')">A</div>
+            <div class="choice" id="B" onclick="checkAnswer('B')">B</div>
+            <div class="choice" id="C" onclick="checkAnswer('C')">C</div>
+            <div class="choice" id="D" onclick="checkAnswer('D')">D</div>
+            <div  id="message"></div>
             </div>
       </section>
       <section>
     <div id="renderTotal" style="display: none">
+      <h3>Game is Over</h3>
+      <h3>Your Final Score is</h3>
+      <h3>id="timer-count"</h3>
+      <form id="userInfo">
+        <label for= "enter">"Enter initials: "</label>
+        <input type="text" id= "userName" name= "userName">
+        <input type= "submit" value= "submit">
+      </form>
+      <div id="message1"></div>
       <div class="button1" id="gobackbtn"></div>
       <div class="button1" id="resetbtn"></div>
       </div>
@@ -47,3 +53,4 @@
     <script src="assets/js/script.js"></script>
   </body>
 </html>
+
